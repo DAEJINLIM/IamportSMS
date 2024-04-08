@@ -31,7 +31,7 @@ IMP.certification({
 	if ( rsp.success ) {
 		// 인증성공
 		$.ajax({
-			url: "https://myapp.apiserver.com/smsauth", // 현재 서비스의 웹서버로 인증된 사용자 정보 요청
+			url: "https://payrit.info/api/v1/oauth/certification/init", // 현재 서비스의 웹서버로 인증된 사용자 정보 요청
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			data: JSON.stringify( { impUid: rsp.imp_uid } )
